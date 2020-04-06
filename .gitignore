@@ -3,3 +3,6 @@
 
 #ignore .eps file outputs
 *.eps
+
+#others
+*.pyc
