@@ -30,6 +30,6 @@ const float MAX_LINESEGMENT_LENGTH = 10000.0;	// 100.0 only for deer
 #define WEIGHTED_DISTANCE(_x,_y,_z) ((float)1.0 * (_x) + (float)1.0 * (_y) + (float)10.0 * (_z))
 // #define WEIGHTED_DISTANCE(_x,_y,_z) ((float)1.0 * (_x) + (float)1.0 * (_y) + (float)5.0 * (_z))
 
-#define RESULT_FILE "C:\\experiments\\trajectory outlier\\result\\result.txt"
+#define RESULT_FILE "result.txt"
 
 #endif
