@@ -36,32 +36,20 @@ def trajectory_convert_plot(infile, outfile):
 def set_g_fraction(param_value):
     replace_line("Param.h", 22, "const float g_FRACTION_PARAMETER = (float)" + str(param_value) + ";\n")
 
-    os.system('make')
-
 def set_g_distance(param_value):
     replace_line("Param.h", 23, "const float g_DISTANCE_PARAMETER = (float)" + str(param_value) + ";\n")
-
-    os.system('make')
 
 def set_g_min_outlier(param_value):
     replace_line("Param.h", 24, "const float g_MINIMUM_OUTLYING_PROPORTION = (float)" + str(param_value) + ";\n")
 
-    os.system('make')
-
 def set_mdl_cost(param_value):
     replace_line("Param.h", 26, "const int MDL_COST_ADVANTAGE = " + str(param_value) + ";\n")
-
-    os.system('make')
 
 def set_min_lineseg(param_value):
     replace_line("Param.h", 27, "const float MIN_LINESEGMENT_LENGTH = " + str(param_value) + ";\n")
 
-    os.system('make')
-
 def set_max_lineseg(param_value):
     replace_line("Param.h", 28, "const float MAX_LINESEGMENT_LENGTH = " + str(param_value) + ";\n")
-
-    os.system('make')
 
 def set_default_parameters():
     replace_line("Param.h", 22, "const float g_FRACTION_PARAMETER = (float)0.95;\n")
