@@ -6,3 +6,4 @@
 
 #others
 *.pyc
+.vscode/

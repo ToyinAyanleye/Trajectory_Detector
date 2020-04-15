@@ -15,7 +15,7 @@ def trajectory_plot(infile, outfile):
 
     os.system('./trajectory_detector --plot ' + infile + " " + outfile)
 
-    print("done plotting trajectory. the output file is " + outfile)
+    print("Done plotting trajectory. the output file is " + outfile)
 
 def trajectory_convert_csv(infile, outfile):
     os.system('make')
@@ -23,7 +23,7 @@ def trajectory_convert_csv(infile, outfile):
 
     os.system('./trajectory_detector --convert ' + infile + " " +  outfile)
 
-    print("done converting. you can now plot the  trajectory of " + outfile)
+    print("Done converting. you can now plot the  trajectory of " + outfile)
 
 def trajectory_convert_plot(infile, outfile):
     os.system('make')
@@ -31,7 +31,7 @@ def trajectory_convert_plot(infile, outfile):
 
     os.system('./trajectory_detection --convplot ' + infile + " " +  outfile)
 
-    print("done plotting trajectory. the output file is " + outfile)
+    print("Done plotting trajectory. the output file is " + outfile)
 
 def set_g_fraction(param_value):
     replace_line("Param.h", 22, "const float g_FRACTION_PARAMETER = (float)" + str(param_value) + ";\n")
